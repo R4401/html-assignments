@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <!--two methods are get or post-->
+    <form action="/demo" method="post">
+        <!--name: used to identify element in back end
+            id: used to refer element in front end
+            styling,scripting,linking
+        -->
+        <label for="nameid">enter name:</label>
+        <input type="text" name="name" id="nameid" placeholder="enter name">
+        <br>
+        <br>
+        <label for="passid">enter password:</label>
+        <input type="password" name="pass" id="passid" placeholder="enter password">
+        <br>
+        <br>
+        <!--login ka button laane ke liye-->
+        <input type="submit" value="click here">
+        <button type="submit">login</button>
+        <br><br>
+        <!--radio button-->
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="radio1" id="radiomale" value="male">male
+            <input type="radio" name="radio1" id="radiofemale" value="male">female
+        </fieldset>
+        <!--checkbox button-->
+        <fieldset>
+            <legend>give preferences</legend>
+            <input type="checkbox" name="location 1" value="male">PUNE
+            <input type="checkbox" name="location 2" value="male">MUMBAI
+            <input type="checkbox" name="location 3" value="male">CHENNAI
+            <input type="checkbox" name="location 4" value="male">BANGLORE
+        </fieldset>
+        <BR><BR>
+        <textarea ROW="20" COLUMN="40">
+        
+        </textarea>
+        <br><br>
+        <input type="date">
+        <br><br>
+        <select name="list">
+            <option value="nothing">select language</option>
+            <option value="java">java</option>
+            <option value="javascript">javascript</option>
+            <option value="cpp">cpp</option>
+        </select>
+<br><br>
+        <input type="text" list="languages" name="dlist">
+        <datalist  id="languages">
+            <option value="nothing">select language</option>
+            <option value="java">java</option>
+            <option value="javascript">javascript</option>
+            <option value="cpp">cpp</option>
+
+        </datalist>
+
+
+
+    </form>
+</body>
+</html>
